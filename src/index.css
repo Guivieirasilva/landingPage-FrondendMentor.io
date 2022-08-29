@@ -1,0 +1,22 @@
+:root{
+   --AlmostWhite: #fafafa;
+   --MediumGray: #696969;
+   --AlmostBlack: #141414;
+   --DarkGray: #181818;
+}
+.light-theme{
+   --background: var(--AlmostWhite);
+   --fontColor: var(--MediumGray);
+   --titleColor: var(--AlmostBlack);
+}
+.dark-theme{
+   --background: var(--DarkGray);
+   --fontColor: var(--MediumGray);
+   --titleColor: var(--AlmostWhite);
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{ max-width: 1440px; font-size: 18px; }

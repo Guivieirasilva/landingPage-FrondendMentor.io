@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import listIcon from "../assets/images/icon-calendar.svg"  
+
 import "../index.css"
 
 export const HeaderNav = styled.header`
+
    width: 100vw;
    background-color: var(--background);
    display: flex;
@@ -11,8 +12,16 @@ export const HeaderNav = styled.header`
    padding: 1.5rem 3rem;
    color: var(--fontColor);
 
-`
+   .menu{
+      position: absolute;
+      right: 8%;
+      display: none;
 
+      @media screen and (max-width:900px){
+         display: block;
+      }
+   }
+`
 export const Navbar = styled.nav`
    display: flex;
    justify-content: space-between;
@@ -22,46 +31,68 @@ export const Navbar = styled.nav`
    a{
       text-decoration: none;
       color: var(--fontColor);
+      @media screen and (max-width:900px) {
+      display: none;
+      
+ }
 
       &:hover, &:focus{
          color:var(--titleColor);
       }
    }
+  
 
 `
 export const Dropdown = styled.div`
 
    position: relative;
+   @media screen and (max-width:900px) {
+      display: none;
+      
+ }
 
-&:hover{
+&:hover, &:focus{
       ul{
          opacity: 1;
-         pointer-events: all;
+         pointer-events: all; 
+          
+         li{
+            pointer-events: all;
+         }
+      }
+
+      img.arrow{
+         transform: rotate(180deg);
       }
    }
-   p{
+   a{
       cursor: pointer;
+    
    }
    ul{
-      /* width: 100px; */
+      
       white-space: nowrap;
       list-style: none;
-      margin-top: .8rem;
-      padding: 1rem;
+      margin-top: .5rem;
+      padding: .7rem 1rem;
       flex-direction: column;
       position: absolute;
       background-color: white;
       box-shadow: .1rem .1rem .7rem gray;
       border-radius: 10px;
-      display: flex;
       opacity: 0;
-      pointer-events: none;
       right: -1px;
-      transition-duration: .8s;
+      transition-duration: 1s;
+      display: flex;
+      pointer-events: none;
+      
 
       li{
-         padding: 8px;
-         pointer-events: all;
+         
+         padding: 10px;
+         pointer-events: none;
+         
+
          
          img{
             margin-right: .5rem;
@@ -97,6 +128,9 @@ export const HeaderButtons = styled.div`
          color: var(--titleColor);
          transform: scale(1.1,1.1);
       }
-
-   }
+ }
+ @media screen and (max-width:900px) {
+   display: none;
+ }
 `
+

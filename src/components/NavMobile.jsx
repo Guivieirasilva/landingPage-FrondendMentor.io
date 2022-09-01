@@ -1,29 +1,21 @@
-import { Nav, Menu, MenuMobile, Logo, Buttons, Links, Dropdown } from "../styles/Navbar.styles";
-import iconLogo from "../assets/images/logo.svg"
-import IconMenu from "../assets/images/icon-menu.svg"
 import IconArrowdown from "../assets/images/icon-arrow-down.svg"
 import IconTodoList from "../assets/images/icon-todo.svg"
 import Iconcalendar from "../assets/images/icon-calendar.svg"
 import IconReminders from "../assets/images/icon-reminders.svg"
 import IconPlanning from "../assets/images/icon-planning.svg"
 
-import { useState } from "react";
-import { NavMobile } from "./NavMobile";
+
+import IconClose from "../assets/images/icon-close-menu.svg"
+import { Container, IconButton, MobileButtons, MobileLink } from "../styles/NavMobile.style"
+import { Dropdown } from "../styles/Navbar.styles";
 
 
-export default function Navbar(){
-   
-   const [menuIsVisible, setMenuIsVisible] = useState(false)
 
+export function NavMobile({menuIsVisible, setMenuIsVisible}){
    return(
-         <>
-            <NavMobile menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible}/>
-            <Nav>
-               <Logo>
-                  <img src={iconLogo} alt="Icon company Snap Website"/>
-               </Logo>
-               <Menu>
-                  <Links>
+         <Container isVisible={menuIsVisible}>
+            <IconButton onClick={() => setMenuIsVisible(false)}><img src={IconClose} alt="Icone de fechar menu (X)" /></IconButton>
+                  <MobileLink>
                      <Dropdown>
                         <a href="#">Features
                            <img src={IconArrowdown} alt="Icon Arrow"/>
@@ -47,16 +39,13 @@ export default function Navbar(){
                      </Dropdown>
                      <li><a href="#">Carrees</a></li>
                      <li><a href="#">About</a></li>
-                  </Links>
-               </Menu>
-               <Buttons>
+                  </MobileLink>
+               <MobileButtons>
                   <button>Login</button>
                   <button>Register</button>
-               </Buttons>
-               <MenuMobile>
-                  <button onClick={() => setMenuIsVisible(true)}><img src={IconMenu} alt=""/></button>
-               </MenuMobile>
-            </Nav>
-         </>
-      )
+               </MobileButtons>
+
+         </Container>
+      
+   )
 }

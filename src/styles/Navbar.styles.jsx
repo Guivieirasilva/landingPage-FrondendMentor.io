@@ -10,6 +10,8 @@ export const Nav = styled.nav`
    transition: .5s;
    a{
       text-decoration: none;
+      transition: 1s;
+
       &:hover{
          color: black;
       }
@@ -34,6 +36,7 @@ export const Menu = styled.div`
    display: flex;
    align-items: center;
    font-weight: 700;
+   transition-duration: 1s ;
    @media screen and (max-width: 900px) {
       display: none;
 
@@ -49,7 +52,6 @@ export const Links = styled.ul`
 export const Dropdown = styled.li`
 
    position: relative;
-   transition-duration: 1s;
 
    &:hover, &:focus {
       
@@ -78,8 +80,10 @@ export const Dropdown = styled.li`
       cursor: pointer;
       pointer-events: none;
       opacity: 0;
+      background-color: #f2f2f2;
       position: absolute;
       display: flex;
+      align-items: center;
       list-style:none;
       flex-direction: column;
       top: 1.4rem;
@@ -90,8 +94,15 @@ export const Dropdown = styled.li`
       gap: 15px;
       box-shadow: .2rem .3rem .6rem gray;
       border-radius: 10px;
+      transition: .5s;
+      z-index: 40;
+      
       li{
          font-size: 13px;
+         transition: .4s;
+
+         &:hover, &:focus{ color:gray; }
+
          img{
             margin-right: 5px;
          }

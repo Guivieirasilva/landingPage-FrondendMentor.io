@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
 :root{
    --AlmostWhite: #fafafa;
    --MediumGray: #696969;
@@ -8,15 +10,25 @@
    --background: var(--AlmostWhite);
    --fontColor: var(--MediumGray);
    --titleColor: var(--AlmostBlack);
+
 }
 .dark-theme{
    --background: var(--DarkGray);
    --fontColor: var(--MediumGray);
    --titleColor: var(--AlmostWhite);
+
 }
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   color: var(--MediumGray);
+   font-size: 18px;
+   font-family: 'Epilogue', sans-serif;
+   
+
 }
-body{ max-width: 1440px; font-size: 18px; }
+body{
+   max-width: 1200px;
+   margin: auto;
+}

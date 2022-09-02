@@ -27,6 +27,7 @@ export const Nav = styled.nav`
 export const Logo = styled.div`
    display: flex;
    justify-content: center;
+   align-items: center;
 
    img{
       width: 120px;

@@ -6,18 +6,6 @@
    --AlmostBlack: #141414;
    --DarkGray: #181818;
 }
-.light-theme{
-   --background: var(--AlmostWhite);
-   --fontColor: var(--MediumGray);
-   --titleColor: var(--AlmostBlack);
-
-}
-.dark-theme{
-   --background: var(--DarkGray);
-   --fontColor: var(--MediumGray);
-   --titleColor: var(--AlmostWhite);
-
-}
 *{
    margin: 0;
    padding: 0;

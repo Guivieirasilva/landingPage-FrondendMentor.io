@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import {styled } from "styled-components";
 import "../index.css"
 
 export const Nav = styled.nav`
@@ -20,8 +20,6 @@ export const Nav = styled.nav`
       width: 100%;
       display: flex;
       justify-content: space-between;
-
-      
    }
 `
 export const Logo = styled.div`

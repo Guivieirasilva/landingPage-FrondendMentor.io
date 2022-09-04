@@ -1,4 +1,4 @@
-import {styled } from "styled-components";
+import styled from "styled-components";
 import "../index.css"
 
 export const Nav = styled.nav`

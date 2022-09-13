@@ -10,7 +10,6 @@ import { Container, IconButton, MobileButtons, MobileDropdown, MobileLink } from
 import { Dropdown } from "../styles/Navbar.styles";
 
 
-
 export function NavMobile({menuIsVisible, setMenuIsVisible}){
    return(
          <Container isVisible={menuIsVisible}>

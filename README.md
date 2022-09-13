@@ -49,7 +49,7 @@ Users should be able to:
 
 ## Author
 
-- Linkedin - [Guilherme Vieira](https://www.twitter.com/yourusernamehttps://www.linkedin.com/in/guilherme-vieira-silva/)
+- Linkedin - [Guilherme Vieira](https://www.linkedin.com/in/guilherme-vieira-silva/)
 - GitHub - [Guilherme Vieira](https://www.your-site.com)
 - Frontend Mentor - [@Guivieirasilva](https://www.frontendmentor.io/profile/Guivieirasilva)
 
